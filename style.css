@@ -1,0 +1,441 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:  -apple-system,system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(245, 244, 244);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+input{
+    text-indent: 30px;
+    outline-color: black;
+}
+
+/* header */
+
+.header {
+    width: 100%;
+    position: sticky;
+    display: flex;
+    top: 0;
+    z-index: 999;
+    justify-content: space-evenly;
+    border-bottom: 0.1px solid lightgray;
+    padding: 10px;
+    background-color: white;
+}
+.header-left{
+    display: flex;
+}
+.header-left img{
+    object-fit: contain;
+    height: 40px;
+    margin-right: 10px;
+}
+.header-right{
+    display: flex;
+}
+.header-search{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    height: 22px;
+    color: gray;
+    background-color: #d1cbcb;
+}
+.header-search input{
+    outline: none;
+    border: none;
+    background: none;
+}
+.header-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    color: gray;
+    cursor: pointer;
+}
+.header-options:hover{
+    color: black;
+}
+.header-options h3{
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+.header-options i{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+/* body main */
+
+.body-main{
+    width: 100%;
+    background-color: rgb(228, 226, 226);
+    margin-top: 10px;
+}
+
+/* sidebar */
+
+.sidebar{
+    width: 23%;
+    position: sticky;
+    margin-left: 2%;
+    height: 100%;
+    top: 80px;
+    left: auto;
+    float: left;
+    border-radius: 10px;
+    height: fit-content;
+}
+.sidebar-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 0;
+    border: 1px solid lightgray;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+.sidebar-top img{
+    margin-bottom: -20px;
+    width: 100%;
+    height: 60px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    object-fit: cover;
+}
+.profile-pic img{
+    height: 50px;
+    width: 50px;
+    object-fit: fill;
+}
+.sidebar-top h2{
+    padding-top: 25px;
+}
+.sidebar-stats {
+    padding: 10px;
+    margin-bottom: 10px;
+    border:1px solid lightgray;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.sidebar-stat{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar-stat p{
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+}
+.sidebar-top h4{
+    color: gray;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.sidebar-top h2{
+    font-size: 18px;
+}
+.sidebar-bottom{
+    text-align: left;
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.recent-item{
+    display: flex;
+    font-size: 13px;
+    color: gray;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.recent-item:hover{
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}
+#recent:hover{
+    color: gray;
+    cursor: default;
+}
+.sidebar-hash{
+    margin: 0 10px;
+}
+.sidebar-bottom p{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+/* feeds */
+
+.feeds{
+    width: 46%;
+    margin: 0 2%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    background-color: rgb(228, 226, 226);
+}
+.feed{
+    width: 100%;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: hsl(0, 7%, 87%);
+    margin-bottom: 10px;
+}
+.add-feed{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.feed-new{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    float: left;
+    height: 40px;
+    width: 350px;
+    color: black;
+}
+.add-feed img{
+    height: 40px;
+    float: left;
+}
+.add-feed i{
+    font-size: 20px;
+}
+.add-icons{
+    display: flex;
+}
+.social-feed{
+
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 10px;
+    
+}
+.job-description p{
+    width: 95%;
+    text-wrap: wrap;
+    text-transform: hidden;
+}
+.feed-img img{
+    padding-top: 10px;
+    width: 96%;
+}
+.profile-details{
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+.profile-detail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+.profile-details img{
+    height: 50px;
+    float: left;
+    padding: 0 5px;
+}
+.profile-detail a,p{
+    float: left;
+    padding-left: 3px;
+}
+.profile-name{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+}
+.profile-name:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.feed-options{
+    width: 15%;
+    float: left;
+}
+
+.feed-options i{
+    display: inline;
+    font-size: 30px;
+}
+.feed-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    padding-bottom: 10px;
+}
+.liked{
+    width: 50%;
+}
+.liked i{
+    float: left !important;
+}
+.comment{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    margin-left: -15px;
+}
+.like-share{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    float: left;
+    padding-bottom: 10px;
+    justify-content: space-around;
+}
+.like-share-button{
+    display: inline;
+    float: left;
+    padding: 10px 10px;
+    border-radius: 25%;
+}
+.like-share-button i,
+.like-share-button h4{
+    display: inline;
+}
+.like-share-button:hover{
+    background-color: hsl(0, 7%, 84%);
+}
+.like-share i{
+    font-size: 20px;
+}
+.feed-bottom input{
+    background-color: lightgray;
+    width: 96%;
+}
+
+/* rightbar */
+
+.right-bar{
+    top: -160px;
+    width: 100%;
+    position: sticky;
+    width: 22%;
+    margin-right: 2%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    float: left;   
+}
+.rightbar-block{
+    width: 100%;
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 10px;
+}
+.rightbar{
+    width: 100%;
+    padding-top: 3px;
+    display: flex;
+    float: left;
+}
+.right-bar h4,p{
+    padding-left: 5px;
+}
+.right-bar p{
+    color: gray;
+}
+.rightbar-icon i{
+    font-size: 10px;
+    display: flex;
+    float: left;
+    width: 10%;
+}
+#rightbar-info{
+    justify-content: space-between;
+}
+.info-icon i{
+    font-size: 20px;
+}
+.ads{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.ads-top{
+    justify-content: end;
+    padding: 3px;
+}
+.ads-icon{
+    width: 10%;
+    padding: 3px;
+}
+.ads-image{
+    padding: 10px;
+    justify-content: center;
+}
+.ads-button{
+    padding: 10px;
+    justify-content: center;
+}
+.ads-button button{
+    width: 30%;
+    height: 25px;
+    border-radius: 20px;
+    color: rgb(18, 150, 233);
+    border: 1px solid rgb(64, 173, 241);
+}
+.ads-button button:hover{
+    border: 3px solid rgb(18, 172, 233);
+}
+.rightbar-header-links a{
+    margin:5px;
+    text-decoration: none;
+    color: black;
+
+}
+.rightbar-header-links a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.footer-copright{
+    padding:10px 1px;
+}
+.footer-copright h4{
+    display: inline;
+    float: left;
+    color: rgb(19, 62, 255);
+}
+.footer-copright span{
+    background-color: rgb(19, 62, 255);
+    color: white;
+    border-radius: 10%;
+    padding: 0.25px;
+}
+.footer-copright p{
+    display: inline;
+    color: black;
+}
+
